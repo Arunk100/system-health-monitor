@@ -1,0 +1,17 @@
+{
+  "name": "system-health-monitor-frontend",
+  "version": "1.0.0",
+  "description": "Admin Dashboard for System Health Monitor",
+  "main": "src/App.vue",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.5.18"
+  }
+}
