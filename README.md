@@ -68,6 +68,29 @@ python agent.py
 ```
 Open the dashboard (default) http://localhost:5173
 
+### Simple Run Commands (recap)
+Linux / WSL (3 terminals):
+```
+# Backend
+cd backend && pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+# Frontend
+cd frontend && npm install && npm run serve -- --port 5173
+
+# Agent
+cd client && pip install -r requirements.txt && python agent.py
+```
+Windows PowerShell:
+```
+cd backend; pip install -r requirements.txt; uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+cd frontend; npm install; npm run serve -- --port 5173
+cd client; pip install -r requirements.txt; python agent.py
+```
+Optional API key before starting backend / agent:
+```
+export API_KEY=MYSECRET        # PowerShell: $env:API_KEY="MYSECRET"
+```
+
 ## CSV Export
 Download via link in UI or directly: `http://localhost:8000/machines.csv` (add `?issues=true&os=Linux` etc.).
 
